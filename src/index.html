@@ -1,26 +1,19 @@
 <!doctype html>
-<html ng-app="todoApp">
+<html ng-app="myApp">
 <head>
 </head>
 <body>
-<h2>Todo</h2>
-<div ng-controller="TodoListController">
-  <span>{{remaining()}} of {{todos.length}} remaining</span>
-  <p>{{name}}</p>
-  [ <a href="" ng-click="archive()">archive</a> ]
-  <ul class="unstyled">
-    <li ng-repeat="todo in todos">
-      <label class="checkbox">
-        <input type="checkbox" ng-model="todo.done">
-        <span class="done-{{todo.done}}">{{todo.text}}</span>
-      </label>
-    </li>
-  </ul>
-  <form ng-submit="addTodo()">
-    <input type="text" ng-model="todoText"  size="30"
-           placeholder="add new todo here">
-    <input class="btn-primary" type="submit" value="add">
-  </form>
-</div>
+<ul class="menu">
+    <li><a href="#!/view1">view1</a></li>
+    <li><a href="#!/view2">view2</a></li>
+</ul>
+
+<!--[if lt IE 7]>
+<p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+<![endif]-->
+
+<div ng-view></div>
+
+<!--<div>AngularJS seed app: v<span app-version></span></div>-->
+
 </body>
-</html>

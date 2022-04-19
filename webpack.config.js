@@ -24,7 +24,7 @@ module.exports = (env = {}, argv) => {
 
         entry: {
             // vendor: ["./styles/vendor.scss", "./scripts/vendor.js"],
-            app: ["./scripts/app.ts"],
+            app: ["./scripts/app.js"],
         },
 
         output: {
