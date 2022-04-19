@@ -1,23 +1,24 @@
 <!doctype html>
 <html ng-app="todoApp">
 <head>
-<!--  <link rel="stylesheet" href="todo.css">-->
+  <link rel="stylesheet" href="./styles/todo.css">
 </head>
 <body>
 <h2>Todo</h2>
-<div ng-controller="TodoListController as todoList">
-  <span>{{todoList.remaining()}} of {{todoList.todos.length}} remaining</span>
-  [ <a href="" ng-click="todoList.archive()">archive</a> ]
+<div ng-controller="TodoListController">
+  <span>{{remaining()}} of {{todos.length}} remaining</span>
+  <p>{{name}}</p>
+  [ <a href="" ng-click="archive()">archive</a> ]
   <ul class="unstyled">
-    <li ng-repeat="todo in todoList.todos">
+    <li ng-repeat="todo in todos">
       <label class="checkbox">
         <input type="checkbox" ng-model="todo.done">
         <span class="done-{{todo.done}}">{{todo.text}}</span>
       </label>
     </li>
   </ul>
-  <form ng-submit="todoList.addTodo()">
-    <input type="text" ng-model="todoList.todoText"  size="30"
+  <form ng-submit="addTodo()">
+    <input type="text" ng-model="todoText"  size="30"
            placeholder="add new todo here">
     <input class="btn-primary" type="submit" value="add">
   </form>
