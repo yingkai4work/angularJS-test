@@ -1,4 +1,5 @@
 import angular, {IController, IModule} from "angular";
+import "../styles/todo.css"
 
 // angular.module("module1", []).controller("test", [
 //   "$scope",
