@@ -3,13 +3,8 @@
     <p>{{$ctrl.taskList}}</p>
     <div ng-repeat="x in $ctrl.taskList" id={{x.id}}>
         <li ng-if="x.completed">
-
             <input type="checkbox" ng-model="x.completed">
             {{x.name}}
         </li>
     </div>
-<!--    <p>{{1 | completed}}</p>-->
-<!--    <p>{{$ctrl.test | completed:true}}</p>-->
-<!--    <p>{{ $ctrl.testP }}</p>-->
-
 </ul>

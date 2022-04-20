@@ -1,8 +1,5 @@
 import html from "./view1.html"
-// import "../../components/todo/Todo"
-import {VIEW1} from "../../scripts/app"
 import angular from "angular"
-
 
 angular.module("myApp.view1", ["ngRoute"])
     .config(['$routeProvider', function ($routeProvider) {
