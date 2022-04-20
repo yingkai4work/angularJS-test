@@ -1,5 +1,6 @@
 import html from "./Todo.html"
 import angular from "angular"
+import "./Todo.sass"
 
 angular.module('myApp.view1').component('todo', {
     template: html,

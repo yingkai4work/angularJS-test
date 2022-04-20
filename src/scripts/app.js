@@ -2,6 +2,7 @@ import angular from "angular";
 import "angular-route"
 import "../pages/view1/view1"
 import "../pages/view2/view2"
+import "./app.sass"
 
 angular.module('myApp', [
     'ngRoute',

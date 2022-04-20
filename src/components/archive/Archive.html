@@ -1,6 +1,9 @@
-<ul >
-    <li ng-repeat="finished in $ctrl.finishedList" id="{{finished.id}}">
-        <input disabled type="checkbox" ng-model="finished.completed">
-        {{finished.name}}
-    </li>
-</ul>
+<section class="archive">
+    <h3>Archived</h3>
+    <ul class="archiveList">
+        <li ng-repeat="finished in $ctrl.finishedList" id="{{finished.id}}">
+            <input disabled type="checkbox" ng-model="finished.completed">
+            {{finished.name}}
+        </li>
+    </ul>
+</section>

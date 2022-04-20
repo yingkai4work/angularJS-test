@@ -1,7 +1,12 @@
-<ul >
+<section class="todo">
+    <div class="todoHead">
+        <h3>Todo</h3>
+        <button type="button" ng-click="$ctrl.handleArchiveClick()">Archive</button>
+    </div>
+    <ul class="todoList">
         <li ng-repeat="todo in $ctrl.taskList" id="{{todo.id}}">
             <input type="checkbox" data-id="{{todo.id}}" ng-model="todo.completed">
             {{todo.name}}
         </li>
-</ul>
-<button type="button" ng-click="$ctrl.handleArchiveClick()">Archive</button>
+    </ul>
+</section>
