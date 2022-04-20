@@ -1,0 +1,6 @@
+<ul >
+    <li ng-repeat="finished in $ctrl.finishedList" id="{{finished.id}}">
+        <input disabled type="checkbox" ng-model="finished.completed">
+        {{finished.name}}
+    </li>
+</ul>
