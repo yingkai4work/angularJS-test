@@ -1,10 +1,11 @@
-<ul>
-    <p>hahahha</p>
-    <p>{{$ctrl.taskList}}</p>
-    <div ng-repeat="x in $ctrl.taskList" id={{x.id}}>
-        <li ng-if="x.completed">
-            <input type="checkbox" ng-model="x.completed">
-            {{x.name}}
+
+<ul >
+        <li ng-repeat="todo in $ctrl.taskList" id="{{todo.id}}">
+            <input type="checkbox" data-id="{{todo.id}}" ng-model="todo.completed">
+            {{todo.name}}
         </li>
-    </div>
+        <li ng-repeat="finished in $ctrl.finishedList" id="{{finished.id}}">
+            <input type="checkbox"  ng-model="finished.completed">
+            {{finished.name}}
+        </li>
 </ul>
