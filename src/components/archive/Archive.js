@@ -4,8 +4,7 @@ import angular from "angular"
 angular.module('myApp.view1').component('archive', {
     template: html,
     bindings: {
-        taskList: '=',
-        finishedList: '=',
+        finishedList: '<',
     },
     controller: function ArchiveController() {}
 });
