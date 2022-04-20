@@ -1,2 +1,8 @@
-<input type="text" placeholder="Enter your task" ng-model="$ctrl.newTaskName">
-<button ng-click="$ctrl.handleAddTask()">+</button>
+<section class="newTask">
+    <div class="input-btn">
+        <input type="text" placeholder="Enter your task" ng-model="$ctrl.newTaskName">
+        <button ng-click="$ctrl.handleAddTask()">+</button>
+    </div>
+    <div class="newTaskError" ng-if="$ctrl.showError">Task can not be empty</div>
+</section>
+
