@@ -8,7 +8,6 @@ angular.module("myApp.view1", ["ngRoute"])
             controller: 'View1Ctrl'
         });
     }]).controller('View1Ctrl', ['$scope', function ($scope) {
-    $scope.newTaskName = '';
     $scope.taskList = [{
         id: 0,
         name: 'task 01',
@@ -32,15 +31,7 @@ angular.module("myApp.view1", ["ngRoute"])
         name: 'task 05',
         completed: true,
     },];
-    $scope.handleAddTask = () => {
-        $scope.newTask = {
-            id: $scope.taskList.length + $scope.finishedList.length,
-            name: $scope.newTaskName,
-            completed: false
-        };
-        $scope.taskList.push($scope.newTask);
-        $scope.newTaskName = '';
-    }
 }]);
+import "../../components/newTask/NewTask"
 import "../../components/todo/Todo"
 import "../../components/archive/Archive"

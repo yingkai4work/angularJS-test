@@ -7,7 +7,5 @@ angular.module('myApp.view1').component('archive', {
         taskList: '=',
         finishedList: '=',
     },
-    controller: function ArchiveController() {
-
-    }
+    controller: function ArchiveController() {}
 });

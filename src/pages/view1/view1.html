@@ -1,6 +1,5 @@
 <div ng-controller="View1Ctrl">
-    <input type="text" placeholder="Enter your task" ng-model="newTaskName">
-    <button ng-click="handleAddTask()">+</button>
+    <new-task task-list="taskList" finished-list="finishedList"></new-task>
     <h3>Todo</h3>
     <todo task-list="taskList" finished-list="finishedList"></todo>
     <h3>Archived</h3>
