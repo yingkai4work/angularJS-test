@@ -33,6 +33,6 @@ angular.module("myApp.view1", ["ngRoute"])
         completed: true,
     },];
 }]);
-import "../../components/newTask/NewTask"
+import "../../components/new-task/NewTask"
 import "../../components/todo/Todo"
 import "../../components/archive/Archive"
